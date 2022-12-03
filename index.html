@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description" content="Let's talk about our solar system">
+
+    <title>SOLAR</title>
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="orbitsEffect.css">
+
+    <!-- code -->
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <!-- stars effect  -->
+    <div class="starsWrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <!-- ............................................. -->
+    <header>
+        <ul class="head">
+            <li class="logo">
+                <a href="#" title="SOLAR">
+                    <img src="/images/logo.svg" alt="SOLAR">
+                </a>
+            </li>
+            <li>
+                <a href="terminology/terminology.html" class="nav" id="terms">Terminology</a>
+            </li>
+            <li>
+                <a href="about.html" class="nav" id="about">About</a>
+            </li>
+        </ul>
+    </header>
+    <!-- ............................................. -->
+    <main>
+        <section id="quotes">
+            <blockquote>
+                <p id="quote">
+                    “Look again at that dot. That's here. That's home. That's us. On it everyone you love, everyone you
+                    know, everyone you ever heard of, every human being who ever was, lived out their lives. The
+                    aggregate of our joy and suffering, thousands of confident religions, ideologies, and economic
+                    doctrines, every hunter and forager, every hero and coward, every creator and destroyer of
+                    civilization, every king and peasant, every young couple in love, every mother and father, hopeful
+                    child, inventor and explorer, every teacher of morals, every corrupt politician, every "superstar,"
+                    every "supreme leader," every saint and sinner in the history of our species lived there-on a mote
+                    of dust suspended in a sunbeam.
+                </p>
+                <cite>
+                    Carl Sagan
+                </cite>
+            </blockquote>
+        </section>
+        <div class="swipe" >
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+                <path fill="white"
+                    d="M11.9 27.65q-2.4-3-3.7-6.75-1.3-3.75-1.3-7.9 0-1.4.1-2.875T7.45 7.1l-3.7 3.65L2 9l6.65-6.6L15.3 9l-1.75 1.75-3.65-3.6q-.3 1.45-.4 3-.1 1.55-.1 2.85 0 3.6 1.15 6.9 1.15 3.3 3.15 5.95ZM30.55 43.3 18.3 38.15l.8-2.15q.25-.7.85-1.125.6-.425 1.35-.575l5.7-1.15-8.55-19.3q-.55-1.15-.1-2.275.45-1.125 1.6-1.675 1.15-.55 2.275-.075 1.125.475 1.675 1.625l4.9 10.95 1.65-.75q.5-.25.9-.325.4-.075.9-.025l9.1.4q1.35.1 2.325.875.975.775 1.375 2.075l2.5 8.75q.4 1.45-.275 2.75t-2.025 1.9L33.7 43.2q-.75.35-1.575.375-.825.025-1.575-.275Z" />
+            </svg>
+        </div>
+
+
+        <!-- content -->
+        <section id="content">
+            <!-- html/svg content -->
+
+            <!-- small viewports -->
+            <svg class="small" width="1080" height="3500" version="1.1" viewBox="0 0 285.75 926.04" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <g class="orbits" fill="none" stroke="#ccc" stroke-linejoin="bevel">
+                    <ellipse cx="142.88" cy="1182.8" rx="316.38" ry="425.97" stroke-dasharray="0.899751, 0.899751"
+                        stroke-width=".89975" />
+                    <ellipse cx="142.88" cy="1121.5" rx="316.38" ry="425.97" stroke-dasharray="0.899751, 0.899751"
+                        stroke-width=".89975" />
+                    <ellipse cx="142.88" cy="1055.3" rx="316.38" ry="425.97" stroke-dasharray="1.0242, 1.0242"
+                        stroke-width="1.0242" />
+                    <ellipse cx="142.88" cy="984.24" rx="316.38" ry="425.97" stroke-dasharray="1.0242, 1.0242"
+                        stroke-width="1.0242" />
+                    <ellipse cx="142.88" cy="912.86" rx="316.38" ry="425.97" stroke-dasharray="1.0242, 1.0242"
+                        stroke-width="1.0242" />
+                    <ellipse cx="142.88" cy="829.77" rx="316.38" ry="425.97" stroke-dasharray="1.0242, 1.0242"
+                        stroke-width="1.0242" />
+                    <ellipse cx="142.88" cy="754.79" rx="333.16" ry="448.55" stroke-dasharray="0.947449, 0.947449"
+                        stroke-width=".94745" />
+                    <ellipse cx="142.88" cy="636.05" rx="333.16" ry="448.55" stroke-dasharray="0.947449, 0.947449"
+                        stroke-width=".94745" />
+                </g>
+
+                <g class="planets" fill="#fff">
+
+                    <circle cx="184.98" cy="106.24" r="11.262" fill="#fff" opacity=".2" />
+
+                    <a href="celestial_bodies/Neptune.html" id="nep" class="planet" title="Neptune">
+                        <circle cx="130.63" cy="189.68" r="24.154" />
+                    </a>
+
+                    <a href="celestial_bodies/Uranus.html" id="ura" class="planet" title="Uranus">
+                        <circle cx="169.57" cy="309.82" r="29.452" />
+                    </a>
+
+
+                    <a href="celestial_bodies/Saturn.html" id="sat" class="planet" title="Saturn">
+                        <circle cx="121.78" cy="403.47" r="40.374" opacity=".6" stroke="#fff" stroke-linejoin="bevel"
+                            stroke-width="5.206" />
+                        <circle cx="121.78" cy="403.47" r="25.218" />
+                    </a>
+
+
+                    <a href="celestial_bodies/Jupiter.html" id="jup" class="planet" title="Jupiter">
+                        <circle cx="163.6" cy="490.28" r="22.549" />
+                    </a>
+
+                    <a href="celestial_bodies/Mars.html" id="mas" class="planet" title="Mars">
+                        <circle cx="93.096" cy="564.27" r="20.237" />
+                    </a>
+
+                    <a href="celestial_bodies/Earth.html" id="er" class="planet" title="Earth">
+                        <circle cx="188.91" cy="635.83" r="24.956" />
+                    </a>
+
+                    <a href="celestial_bodies/Venus.html" id="ven" class="planet" title="Venus">
+                        <circle cx="85.798" cy="702.29" r="16.82" />
+                    </a>
+
+                    <a href="celestial_bodies/Mercury.html" id="mec" class="planet" title="Mercury">
+                        <circle cx="181.77" cy="759.67" r="14.31" />
+                    </a>
+
+                    <a href="celestial_bodies/Sun.html" id="sun" class="planet" title="Sun">
+                        <circle cx="142.88" cy="905.89" r="96.968" />
+                    </a>
+                </g>
+            </svg>
+
+
+
+            <!-- big viewports -->
+            <svg class="big" width="1055" height="910" version="1.1" viewBox="0 0 279.14 240.77" xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg">
+                <g class="orbits" transform="translate(-149.659999-18.554999)" fill="none" stroke="#ccc">
+                    <g>
+                        <g id="ePxuBc5kL0K4_tr" transform="translate(335.68,142.9) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="translate(0,0)" stroke-width="0.826"
+                                stroke-linejoin="bevel" stroke-dasharray="0.826,2.478" />
+                        </g>
+                        <g id="ePxuBc5kL0K5_tr" transform="translate(335.8097,142.785624) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(1.1956,1.1956) translate(0,0)"
+                                stroke-width="0.726" stroke-linejoin="bevel" stroke-dasharray="0.726,2.178" />
+                        </g>
+                        <g id="ePxuBc5kL0K6_tr" transform="translate(336.022925,143.033376) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(1.3419,1.3419) translate(0,0)"
+                                stroke-width="0.65132" stroke-linejoin="bevel" stroke-dasharray="0.651324,1.95397" />
+                        </g>
+                        <g id="ePxuBc5kL0K7_tr" transform="translate(336.214775,142.739048) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(1.4737,1.4737) translate(0,0)"
+                                stroke-width="0.52248" stroke-linejoin="bevel" stroke-dasharray="0.522482,1.56745" />
+                        </g>
+                    </g>
+                    <g id="ePxuBc5kL0K8_tr" transform="translate(335.651275,142.514528) rotate(0)">
+                        <ellipse rx="26.553" ry="26.819" transform="scale(1.7357,1.7357) translate(0,0)"
+                            stroke-width="0.63778" stroke-linecap="round" stroke-dasharray="1.91335,1.91335" />
+                    </g>
+                    <g>
+                        <g id="ePxuBc5kL0K10_tr" transform="translate(335.74505,142.973856) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(2.3414,2.3414) translate(0,0)"
+                                stroke-width="0.29897" stroke-linejoin="bevel" stroke-dasharray="0.298968,0.896904" />
+                        </g>
+                        <g id="ePxuBc5kL0K11_tr" transform="translate(335.630275,141.802192) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(-2.6677,2.6677) translate(0,0)"
+                                stroke-width="0.29897" stroke-linejoin="bevel" stroke-dasharray="0.298968,0.896904" />
+                        </g>
+                        <g id="ePxuBc5kL0K12_tr" transform="translate(325.1024,141.174512) rotate(0)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(-3.1472,3.1472) translate(0,0)"
+                                stroke-width="0.24148" stroke-linejoin="bevel" stroke-dasharray="0.241483,0.724449" />
+                        </g>
+                        <g id="ePxuBc5kL0K13_tr" transform="translate(309.737825,141.271936) rotate(360)">
+                            <ellipse rx="26.553" ry="26.819" transform="scale(-3.9191,3.9191) translate(0,0)"
+                                stroke-width="0.19698" stroke-linejoin="bevel" stroke-dasharray="0.196985,0.590955" />
+                        </g>
+                    </g>
+                </g>
+
+                <g class="planets" transform="translate(-149.66 -18.555)" fill="#fff">
+                    <a href="celestial_bodies/Sun.html" id="sun" class="planet" title="Sun">
+                        <path
+                            d="m322.73 154.6a17.097 17.296 0 0 1 2.15-24.325 17.097 17.296 0 0 1 24.052 2.0976 17.097 17.296 0 0 1-1.9969 24.338 17.097 17.296 0 0 1-24.064-1.9427"
+                            stroke-width=".59498" />
+                    </a>
+
+                    <a href="celestial_bodies/Mercury.html" id="mec" class="planet" title="Mercury">
+                        <path
+                            d="m315.91 125.04a4.5229 4.5229 0 0 1 0.56877-6.3608 4.5229 4.5229 0 0 1 6.3626 0.54852 4.5229 4.5229 0 0 1-0.52826 6.3643 4.5229 4.5229 0 0 1-6.366-0.508" />
+                    </a>
+
+                    <a href="celestial_bodies/Venus.html" id="ven" class="planet" title="Venus">
+                        <path
+                            d="m324.59 175.33a3.5249 3.5249 0 0 1 0.44327-4.9573 3.5249 3.5249 0 0 1 4.9587 0.42749 3.5249 3.5249 0 0 1-0.41171 4.96 3.5249 3.5249 0 0 1-4.9613-0.39591" />
+                    </a>
+
+                    <a href="celestial_bodies/Earth.html" id="er" class="planet" title="Earth">
+                        <path
+                            d="m364.67 131.09a4.4842 4.4842 0 0 1 0.56391-6.3064 4.4842 4.4842 0 0 1 6.3082 0.54382 4.4842 4.4842 0 0 1-0.52375 6.3099 4.4842 4.4842 0 0 1-6.3115-0.50365" />
+                    </a>
+
+                    <a href="celestial_bodies/Mars.html" id="mas" class="planet" title="Mars">
+                        <path
+                            d="m294.8 155.04a4.7855 4.7855 0 0 1 0.60178-6.7301 4.7855 4.7855 0 0 1 6.7319 0.58036 4.7855 4.7855 0 0 1-0.55893 6.7338 4.7855 4.7855 0 0 1-6.7355-0.53749" />
+                    </a>
+
+                    <a href="celestial_bodies/Jupiter.html" id="jup" class="planet" title="Jupiter">
+                        <path
+                            d="m286.16 187.64a4.4652 4.3449 0 0 1 0.56151-6.1105 4.4652 4.3449 0 0 1 6.2814 0.52694 4.4652 4.3449 0 0 1-0.52152 6.1139 4.4652 4.3449 0 0 1-6.2847-0.48801" />
+                    </a>
+
+                    <a href="celestial_bodies/Saturn.html" id="sat" class="planet" title="Saturn">
+                        <path
+                            d="m265.32 118.65a7.1369 7.2377 0 0 1 0.89748-10.179 7.1369 7.2377 0 0 1 10.04 0.87775 7.1369 7.2377 0 0 1-0.83356 10.184 7.1369 7.2377 0 0 1-10.045-0.81292" />
+                        <path
+                            d="m262.27 121.23a11.104 11.26 0 0 1 1.3963-15.837 11.104 11.26 0 0 1 15.62 1.3656 11.104 11.26 0 0 1-1.2968 15.844 11.104 11.26 0 0 1-15.628-1.2648"
+                            opacity=".6" stroke-width="1.5558" />
+                    </a>
+
+                    <a href="celestial_bodies/Uranus.html" id="ura" class="planet" title="Uranus">
+                        <path
+                            d="m238.88 169.75a8.0393 8.0393 0 0 1 1.011-11.306 8.0393 8.0393 0 0 1 11.309 0.97497 8.0393 8.0393 0 0 1-0.93896 11.312 8.0393 8.0393 0 0 1-11.315-0.90295" />
+                    </a>
+
+                    <a href="celestial_bodies/Neptune.html" id="nep" class="planet" title="Neptune">
+                        <path
+                            d="m202.19 127.74a6.7259 6.7259 0 0 1 0.8458-9.459 6.7259 6.7259 0 0 1 9.4617 0.81569 6.7259 6.7259 0 0 1-0.78557 9.4642 6.7259 6.7259 0 0 1-9.4667-0.75544" />
+                    </a>
+
+
+                    <path
+                        d="m156.12 145.59a3.9085 3.9085 0 0 1 0.4915-5.4967 3.9085 3.9085 0 0 1 5.4983 0.47401 3.9085 3.9085 0 0 1-0.4565 5.4997 3.9085 3.9085 0 0 1-5.5012-0.43899"
+                        opacity=".1" />
+                </g>
+            </svg>
+        </section>
+    </main>
+    <!-- ..............................................-->
+    <footer>
+        <p>All content copyright &COPY; 2022, SOLAR.</p>
+    </footer>
+</body>
+
+</html>

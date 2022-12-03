@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        *{
+            padding: 0;
+            margin: 0;
+            /* box-sizing: border-box; */
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .proton{
+            width: 80px;
+            height: 80px;
+            background-color: deepskyblue;
+            border-radius: 50%;
+            position: relative;
+
+        }
+        .electron{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 50%;
+            padding: 100px;
+            border: 1px dotted silver;
+            left: -50%;
+            top: -50%;
+            animation: rotation 3s infinite linear;
+        }
+        .second{
+            width: 40%;
+            height: 40%;
+            left: -20%;
+            top: -20%;
+            animation: rotation 4s infinite linear;
+
+        }
+        
+
+        .electron::before{
+            content: "" ;
+            width: 30px;
+            height: 30px;
+            background-color: deeppink;
+            position: absolute;/* relative to its father */
+            left: -20px; /* its width and height */
+            top: -20px;
+            border-radius: 50%;
+        }
+        
+        .second::before{
+            content: "" ;
+            width: 20px;
+            height: 20px;
+            left: -15px; /* its width and height */
+            top: -15px;
+        }
+
+        @keyframes rotation {
+            from{
+                transform: rotate(-360deg);
+            }
+            
+        }
+        
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="proton">
+            <div class="electron"></div>
+            <div class="electron second"></div>
+        </div>
+    </div>
+
+</body>
+</html>

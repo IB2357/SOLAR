@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,500;1,700&display=swap');
+@import url(starsEffect.css);
+
+/* @font-face {
+    font-family: 'Cormorant Garamond';
+    src: 
+    url(fonts/Cormorant_Garamond/CormorantGaramond-BoldItalic.ttf),
+    url(fonts/Cormorant_Garamond/CormorantGaramond-LightItalic.ttf),
+    url(fonts/Cormorant_Garamond/CormorantGaramond-MediumItalic.ttf)
+} */
+
+:root{
+    --border_70: 1px solid rgba(255, 255, 255, 70%);
+}
+
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040810;
+    color: white;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a,a:link,a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* .............................................................. */
+
+.nav {
+    padding: .4em .5em;
+    border: var(--border_70);
+    background: linear-gradient(270deg, rgb(182 182 182 / 4%), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+#terms {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#about {
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+ul.head {
+    display: flex;
+    margin-top: 10px;
+    height: 100%;
+    /* justify-content: flex-start; */
+    align-items: center;
+}
+
+.head li {
+    margin: 0 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: .9em;
+}
+
+li.logo {
+    margin-right: auto;
+}
+
+li.logo img {
+    margin-top: 10px;
+    width: auto;
+}

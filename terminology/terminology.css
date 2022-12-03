@@ -1,0 +1,176 @@
+@import url(/general.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+li.logo {
+    margin-right: auto;
+}
+
+/* main.......................... */
+main {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 4em;
+} */
+.title {
+    margin-top: 3em;
+}
+
+h1 {
+    font-size: 2.7em;
+    margin: 0 auto 2em;
+}
+
+.title img {
+    position: relative;
+    width: 100px;
+    right: 65px;
+    top: 25px;
+}
+
+article {
+    display: block;
+    /* border: 1px solid; */
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+
+    background: linear-gradient(270deg, rgb(180 178 178 / 10%), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(1px);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgb(0 0 0 / 37%);
+}
+
+#content ul {
+    margin-right: 5em;
+    padding: 1em;
+    width: fit-content;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    border-bottom-right-radius: 10px;
+
+
+}
+
+#content li {
+    display: block;
+    padding: .2em;
+    margin: .5em 0 .5em 2em;
+}
+
+
+#content,
+.term {
+    width: 100%;
+    padding: 1em;
+    margin: .6em auto;
+
+}
+
+.term p {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+strong {
+    font-size: 1.6em;
+    /* font-size: xx-large; */
+}
+
+/* footer....................... */
+footer {
+    text-align: center;
+    padding: 1em;
+}
+
+
+/* fixed button.............. */
+#cssFixed {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    fill: rgba(180 178 178 / 30%);
+    position: fixed;
+    right: 1.5em;
+    bottom: 5em;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+#jsFixed {
+    display: none;
+}
+
+/* big */
+@media screen and (min-width: 921px) {
+
+    /* r-header */
+    header {
+        width: 87%;
+        margin: auto;
+    }
+
+    main {
+        margin: 1em 10%;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .nav:active {
+        background-color: rgba(100%, 100%, 100%, 7%);
+    }
+
+    #about:hover {
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+
+    /* r-term */
+    div {
+        max-width: 65%;
+    }
+
+
+
+    /* fixed button */
+    #cssFixed {
+        display: inline;
+    }
+
+    #cssFixed:hover {
+        fill: rgba(180 178 178 / 85%);
+    }
+}

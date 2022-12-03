@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/icon.ico"> <!--  -->
+    <title>About SOLAR</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <!-- stars effect  -->
+    <div class="starsWrapper">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+
+    <div class="container">
+
+        <!-- rotate effect -->
+        <div class="wrapper">
+            <div class="star">
+                <div class="planet"></div>
+                <div class="planet second"></div>
+            </div>
+            <div class="planet third"></div>
+
+        </div>
+
+        <!-- talk about the purpose of designing this website﻿﻿﻿
+        Mention yourself as a designer  -->
+        <main>
+            <section id="solar">
+                <p>
+                    <a class="logo" href="index.html"><img class="logo" src="images/logo_L.png" alt=""></a>
+                    is just an example in design so all the information
+                    provided are taken from
+                    <a class="source" href="https://en.wikipedia.org/wiki/Solar_System">
+                        <cite>wikipedia.org</cite>
+                    </a>, And most of the content may have
+                    copyrights, So <strong>me and anyone have no rights to use it for commercial purposes without
+                        permission from the owners</strong>
+                </p>
+            </section>
+
+            <section id="support_button">
+                <button onclick="openP()">
+                    buy me a book.
+                    <img src="/images/favorite_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+
+                </button>
+            </section>
+
+            <section id="contact">
+                <a href="mailto:aswh.abrahem@gmail.com">
+                    <p>Contact me:</p>
+                    aswh.abrahem@gmail.com
+                </a>
+            </section>
+        </main>
+    </div>
+
+    <!-- pop -->
+    <div id="supWrapper"></div>
+    <div id="support">
+        <div class="formHead">
+            <h1>
+                <img src="/images/favorite_FILL1_wght400_GRAD0_opsz48.svg" alt="">
+
+                <label for="email">buy me a book</label>
+            </h1>
+            <button id="Bclose" onclick="closeP()">&times;</button>
+        </div>
+        <form action="#" method="post">
+
+            <!-- required inputs -->
+            <input type="email" name="email" id="email" class="req-box" required autofocus placeholder=" Email">
+            <!-- temporary -->
+            <input type="number" name="card-num" id="card-num" class="req-box" required placeholder=" Card number">
+
+            <!-- optional inputs -->
+            <input type="text" name="name" id="name" class="opt-box" placeholder=" Name (optional)" maxlength="30">
+
+            <textarea name="t-area" id="t-area" class="opt-box" cols="30" rows="10"
+                placeholder=" Say something nice.. (optional)"></textarea>
+            <div class="pay">
+                <input type="submit" value=" $1">
+                <input type="submit" value=" $3">
+                <input type="submit" value=" $5">
+            </div>
+        </form>
+    </div>
+    <script>
+        function openP() {
+            document.getElementById('support').classList.add('open');
+            document.getElementById('supWrapper').classList.add('open');
+        }
+
+        function closeP() {
+            document.getElementById('support').classList.remove('open');
+            document.getElementById('supWrapper').classList.remove('open');
+        }
+    </script>
+</body>
+
+</html>
