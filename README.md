@@ -1,2 +1,5 @@
-# SOLAR
-my first frontend website (html+pure css+sickening js)
+# SOLAR 
+## my first frontend website 
+    - html
+    - pure css
+    - sickening js
