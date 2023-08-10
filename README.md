@@ -1,5 +1,5 @@
 # SOLAR 
-## my first frontend website 
+## my first static website 
     - html
     - pure css
     - sickening js
